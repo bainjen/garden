@@ -21,7 +21,7 @@ const randomSeeds = (number) => {
   let seeds = {};
   let keys = Object.keys(seedLookup);
   for(let i = 0; i < number; i++){
-    let rand = Math.floor(Math.random() * 6);
+    let rand = Math.floor(Math.random() * keys.length);
     seeds[keys[rand]] = seedLookup[keys[rand]];
   }
   return seeds;

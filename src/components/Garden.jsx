@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import useGarden from "../hooks/useGarden";
 import SeedList from "./SeedList";
+import PlantList from "./PlantList";
 
 const Garden = () => {
   //destructure props
@@ -10,9 +11,13 @@ const Garden = () => {
   console.log(seedPacket);
   return (
     <div>
-      <h2>seeds collection</h2>
-
       <SeedList seeds={seedPacket} plantSeed={plant} />
+
+      <PlantList plants={garden} growPlant={water} />
+      {/* 
+      <div style={{display: 'flex'}}>
+        {garden.map((plot, index) => <p style={{fontSize: `${plot.size}em`}} onClick={() => water(index)}>{plot.plant}</p>)}
+       </div> */}
     </div>
   );
 };

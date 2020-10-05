@@ -1,5 +1,10 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## FOLLOWING ALONG WITH TRAVIS'S LECTURES LHL WEEK 
+
+coding along to build muscle memory and understanding of react hooks and use flow
+Also, emoji gardens are super fun!
+
 ## Available Scripts
 
 In the project directory, you can run:
